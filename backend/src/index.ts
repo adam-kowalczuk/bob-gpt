@@ -1,4 +1,9 @@
 import app from "./app.js";
+import { connectToDatabase } from "./db/connection.js";
 
 //Connection
-app.listen(8080, () => console.log("Server running on PORT 8080"));
+connectToDatabase()
+  .then(() => {
+    app.listen(8080, () => console.log("Server running on PORT 8080"));
+  })
+  .catch((err) => console.log(err));
