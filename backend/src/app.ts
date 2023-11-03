@@ -11,4 +11,6 @@ app.use(express.json());
 //Remove in production
 app.use(morgan("dev"));
 
+app.use("/api/v1");
+
 export default app;
