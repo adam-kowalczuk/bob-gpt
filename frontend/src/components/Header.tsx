@@ -3,8 +3,10 @@ import { AppBar, Toolbar } from "@mui/material";
 
 const Header = () => {
   return (
-    <AppBar sx={{}}>
-      <Toolbar></Toolbar>
+    <AppBar
+      sx={{ bgcolor: "transparent", position: "static", boxShadow: "none" }}
+    >
+      <Toolbar sx={{ display: "flex" }}></Toolbar>
     </AppBar>
   );
 };
