@@ -14,7 +14,7 @@ const Logo = () => {
     >
       <Link to={"/"}>
         <img
-          src="open.png"
+          src="openai.png"
           alt="openai"
           width={"30px"}
           height={"30px"}
@@ -28,7 +28,7 @@ const Logo = () => {
             textShadow: "2px 2px 20px #000"
           }}
         >
-          <span style={{ fontSize: "20px" }}>Bob</span>GPT
+          <span style={{ fontSize: "20px" }}>BOB</span>-GPT
         </Typography>
       </Link>
     </div>
